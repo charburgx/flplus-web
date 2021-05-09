@@ -1,13 +1,15 @@
 import React from 'react'
 import './Header.scss';
 import { GHVersion, WIN_SOURCE, WIN_WIKI, WIN_ISSUES } from 'api/constants';
+import VAlign from 'ui/VAlign';
 import HeaderButton from './HeaderButton';
 import HeaderLinks from './HeaderLinks';
 
 const Header = ({ ver }: { ver: GHVersion }) => (
     <div className="header">
-        <div className="valign-wrapper flex-center">
-            <img src="/logo.svg" alt=""/>
+        <VAlign className="title-wrapper">
+            <img src="/favicon.svg" alt="" draggable="false"/>
+
             <span className="title">
                 FL Plus
             </span>
@@ -18,7 +20,8 @@ const Header = ({ ver }: { ver: GHVersion }) => (
                 {ver.name}
             </span> : ""
             }
-        </div>
+        </VAlign>
+
         <span className="subtitle">
             Boost workflow productivity in FL Studio
         </span>
@@ -33,7 +36,7 @@ const Header = ({ ver }: { ver: GHVersion }) => (
 
         <HeaderLinks entries={[
              { text: "Documentation", icon: "book", href: WIN_WIKI },
-             { text: "FAQ", icon: "help", href: "" },
+             { text: "FAQ", icon: "help", href: "/faq" },
              { text: "GitHub", icon: "code", href: "" },
              { text: "Suggestion", icon: "announcement", href: WIN_ISSUES }
         ]} />

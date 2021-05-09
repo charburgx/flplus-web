@@ -3,8 +3,9 @@
 .main-content {
     color: $text-900;
 
-    span.header {
-        display: inline;
+    span.text-header {
+        display: block;
+        margin-bottom: 0.25rem;
     }
 
     img {
@@ -21,5 +22,12 @@
         display: flex;
         align-items: center;
        } 
+    }
+
+    .and-more {
+        span.text-header {
+            text-align: center;
+            margin-bottom: 1em;
+        }
     }
 }

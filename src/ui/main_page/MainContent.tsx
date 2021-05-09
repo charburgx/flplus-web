@@ -4,7 +4,7 @@ import './MainContent.scss';
 // Content
 type contentDict = { title: string, content: string[], image?: string }
 
-const content: [contentDict, contentDict] = [
+const content: [contentDict, contentDict, contentDict, contentDict] = [
     { 
         title: "Backup Toolbar & Settings", 
         content: [
@@ -13,11 +13,24 @@ const content: [contentDict, contentDict] = [
         image: "/panel1_2.png"
     },
     {
-        title: "Easily swap colors",
+        title: "Rapidly Swap Colors",
         content: [
             "Simply press C and the desired color to quickly switch between colors while editing in the Piano Roll."
         ],
         image: "/panel2.png"
+    },
+    {
+        title: "Multiple Custom Workspaces",
+        content: [
+            "Say goodbye to wrangling windows for hours."
+        ]
+    },
+    {
+        title: "Pencil Tool Bound to Z",
+        content: [
+            "No longer reach your hand across the keyboard to swap to the pencil tool."
+        ],
+        image: "/panel4.png"
     }
 ]
 
@@ -46,10 +59,10 @@ const InnerColumn = ({children}: {children: any[]}) => (
 const Entry = ({i}: {i: number}) => (
     <OuterColumn>
         <InnerColumn>
-            <img src={content[i].image} id={`img${i}`} alt=""/>
+            <img src={content[i].image} id={`img${i}`} alt="" draggable="false"/>
 
             <div className="text">
-                <span className="header">{content[i].title}</span> <br/>
+                <span className="text-header">{content[i].title}</span>
 
                 {content[i].content.map((ent, j, {length}) => 
                     <React.Fragment>
@@ -66,6 +79,13 @@ const MainContent = () =>
 (<div className="main-content container">
     <div className="row outer">
         {[0, 1].map(i => <Entry i={i} />)}
+    </div>
+    <div className="row outer">
+        {[2, 3].map(i => <Entry i={i} />)}
+    </div>
+
+    <div className="and-more">
+        <span className="text-header">And more!</span>
     </div>
 </div>);
 

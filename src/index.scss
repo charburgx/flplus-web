@@ -13,13 +13,15 @@ $bg-600: #834e2f;
 $bg-1: #f6d365;
 $bg-2: #fda085;
 
-$text-500: #c8cfe6;
+//$text-500: #c8cfe6;
+$text-500: #e6d7c8;
 $text-900: #fff;
 
 $fs-title: 3em;
 $fs-subtitle: 1.4rem;
 $fs-header: 2rem;
 $fs-body: 16px;
+$fs-btn-small: 13px;
 
 ::selection {
   background: $bg-2;
@@ -48,6 +50,20 @@ code {
     monospace;
 }
 
+.valign-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.sep {
+  display: inline-block;
+  height: 1.5rem;
+  width: 1px;
+  background-color: #6b7187;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .btn, .btn-large, .btn-small {
   text-transform: none;
 }
@@ -69,7 +85,13 @@ code {
   transform: none;
 }
 
-span.header {
+span.text-header {
   font-size: $fs-header;
   font-weight: 600;
+  line-height: 1.2;
+}
+
+span.text-small {
+  color: $text-900;
+  font-size: $fs-btn-small;
 }

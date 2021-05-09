@@ -18,6 +18,10 @@ $dlbtn-br2: 0px;
         margin-right: $margin-title;
     }
 
+    .title-wrapper {
+        justify-content: center;
+    }
+
     .title {
         font-size: $fs-title;
         font-weight: 600;
@@ -64,16 +68,7 @@ $dlbtn-br2: 0px;
         align-items: center;
         justify-content: center;
     }
-
-    .links .sep {
-        display: inline-block;
-        height: 1.5rem;
-        width: 1px;
-        background-color: #6b7187;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
+    
     @include media("<=phone") {
         .links a span {
             display: none;
