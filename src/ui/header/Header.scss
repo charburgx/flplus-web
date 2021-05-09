@@ -1,0 +1,87 @@
+@import 'index.scss';
+
+$margin-title: 1.4em;
+$margin-subtitle: 3rem;
+
+$dlbtn-br1: 20px;
+$dlbtn-br2: 0px;
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding-top: 6rem;
+    min-height: 20rem;
+
+    img {
+        width: 40px;
+        margin-bottom: 10px;
+        margin-right: $margin-title;
+    }
+
+    .title {
+        font-size: $fs-title;
+        font-weight: 600;
+        color: $text-900;
+    }
+    
+    .subtitle {
+        font-size: $fs-subtitle;
+        font-weight: 400;
+        margin-bottom: $margin-subtitle;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .version {
+        font-size: 15px;
+        color: black;
+        font-weight: 500;
+        margin-left: $margin-title;
+        background-color: $bg-1;
+        padding: 2px 5px;
+        border-radius: 50px;
+    }
+
+    .btn {
+        color: black;
+        border-radius: $dlbtn-br1 $dlbtn-br2;
+        //transition: .4s ease;
+    }
+
+    .dl-btn-left {
+        margin-right: 20px;
+        background: linear-gradient(30deg, $bg-1 0%, $bg-2 100%);
+        
+    }
+    
+    .dl-btn-right {
+        background: linear-gradient(-30deg, $bg-1 0%, $bg-2 100%);
+    }
+
+    .links {
+        margin: $margin-subtitle*1.5 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links .sep {
+        display: inline-block;
+        height: 1.5rem;
+        width: 1px;
+        background-color: #6b7187;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    @include media("<=phone") {
+        .links a span {
+            display: none;
+        }
+
+        .links i.material-icons {
+            margin-right: 0;
+        }
+    }
+}
+

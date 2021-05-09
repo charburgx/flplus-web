@@ -1,0 +1,25 @@
+@import 'index.scss';
+
+.main-content {
+    color: $text-900;
+
+    span.header {
+        display: inline;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .row.inner {
+        display: flex;
+        align-items: center;
+    }
+
+    .row.outer {
+       @include media(">=tablet") {
+        display: flex;
+        align-items: center;
+       } 
+    }
+}
