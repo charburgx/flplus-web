@@ -6,31 +6,32 @@ type contentDict = { title: string, content: string[], image?: string }
 
 const content: [contentDict, contentDict, contentDict, contentDict] = [
     { 
-        title: "Backup Toolbar & Settings", 
+        title: "Quick Create Automation Clip", 
         content: [
-            "Have a custom toolbar? Easily sync it across multiple devices."
+            "Simply press CTRL+SHIFT+A to create an automation clip on the most recently tweaked parameter."
         ],
-        image: "/panel1_2.png"
+        image: "/panel_1_3_3.png"
     },
     {
         title: "Rapidly Swap Colors",
         content: [
-            "Simply press C and the desired color to quickly switch between colors while editing in the Piano Roll."
+            "Simply press X and the desired color to quickly switch between colors while editing in the Piano Roll."
         ],
         image: "/panel2.png"
     },
     {
         title: "Multiple Custom Workspaces",
         content: [
-            "Say goodbye to wrangling windows for hours."
-        ]
+            "Say goodbye to wrangling windows."
+        ],
+        image: "/panel3.png"
     },
     {
-        title: "Pencil Tool Bound to Z",
+        title: "Automatically Disable Reach Playback",
         content: [
-            "No longer reach your hand across the keyboard to swap to the pencil tool."
+            "No longer experience Edison randomly jumping to the start of playback."
         ],
-        image: "/panel4.png"
+        image: "/panel4_2.png"
     }
 ]
 
