@@ -24,7 +24,7 @@ const Header = ({ ver }: props ) => (
             {/* Show version info once its loaded */}
             { !ver.loading ? 
             <span className="version">
-                {ver.name}
+                {ver.tag_name}
             </span> : ""
             }
         </VAlign>

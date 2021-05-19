@@ -4,6 +4,7 @@
 export type GHVersion = {
     html_url: string,
     name: string,
+    tag_name: string,
     loading?: Boolean
 };
 
@@ -13,6 +14,7 @@ export type GHVersion = {
 export const FALLBACK_VER: GHVersion = {
     html_url: "",
     name: "Beta",
+    tag_name: "b0.1.0",
     loading: true
 };
 

@@ -17,7 +17,7 @@ export const useWinVersion: () => any[] = () => {
     axios.get(uri)
       .then(res => {
         if(!Array.isArray(res.data) || res.data.length <= 0) return;
-
+        
         const wv = res.data[0] as Constants.GHVersion;
         setWVersion({...wv, loading: false});
       })
