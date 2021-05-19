@@ -70,6 +70,7 @@ $dlbtn-br2: 0px;
     }
     
     @include media("<=phone") {
+        // hide header link text on small displays
         .links a span {
             display: none;
         }

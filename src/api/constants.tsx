@@ -1,16 +1,21 @@
+/**
+ * Version information obtained from a github release
+ */
 export type GHVersion = {
     html_url: string,
     name: string,
     loading?: Boolean
 };
 
+/**
+ * Default version used as fallback in case API request fails
+ */
 export const FALLBACK_VER: GHVersion = {
     html_url: "",
     name: "Beta",
     loading: true
 };
 
-//const issues: (s: string) => string = s => (s + "/issues");
 const issues = "issues";
 const wiki = "wiki";
 

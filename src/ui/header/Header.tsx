@@ -5,7 +5,14 @@ import VAlign from 'ui/VAlign';
 import HeaderButton from './HeaderButton';
 import HeaderLinks from './HeaderLinks';
 
-const Header = ({ ver }: { ver: GHVersion }) => (
+type props = {
+    /**
+     * GitHub version info, to display in tag
+     */
+    ver: GHVersion
+}
+
+const Header = ({ ver }: props ) => (
     <div className="header">
         <VAlign className="title-wrapper">
             <img src="/favicon.svg" alt="" draggable="false"/>

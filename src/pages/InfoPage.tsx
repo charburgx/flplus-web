@@ -2,9 +2,38 @@ import React, { Fragment } from 'react';
 import './InfoPage.scss';
 import NavBack from 'ui/nav/NavBack';
 
-export type Info = { title?: string, content: (string | JSX.Element)[] };
+/**
+ * Page info object, used to define a block of text with a title and content body
+ */
+export type Info = { 
+    title?: string, 
+    /**
+     * Main content
+     * 
+     * Each array entry is a new line
+     */
+    content: (string | JSX.Element)[] 
+};
 
-const InfoPage = ({page, info}: {page: string, info: Info[]}) => <Fragment>
+type props = {
+    /**
+     * The page title, to be displayed at the top of page
+     */
+    page: string,
+    /**
+     * Page content, centered left
+     */
+    info: Info[]
+}
+
+/**
+ * A page with blocks of information
+ * 
+ * Page content is centered left
+ * 
+ * @component
+ */
+const InfoPage = ({page, info}: props) => <Fragment>
     <div className="page-info container">
         <NavBack text={page} />
 

@@ -1,6 +1,10 @@
+/**
+ * Frequently Asked Questions page
+ */
+
 import React, { Fragment } from 'react';
 import InfoPage, { Info } from 'pages/InfoPage';
-import { WIN_ISSUES } from 'api/constants'
+import { WIN_ISSUES, WIN_WIKI } from 'api/constants'
 
 const content: Info[] = [
     {
@@ -20,7 +24,7 @@ const content: Info[] = [
     {
         title: "It isn't working!",
         content: [
-            <Fragment>Most likely, this is because you have not detached your windows. A guide for this can be found <a href="">here</a>.</Fragment>,
+            <Fragment>Most likely, this is because you have not detached your windows. A guide for this can be found <a href={WIN_WIKI}>here</a>.</Fragment>,
             <Fragment>If this is not the case, you can always issue a ticket on the <a href={WIN_ISSUES}>GitHub Issues</a> page. In case you have encountered an error, hopefully someone can fix it soon. Please keep in mind that this is a small project effectively run by one person, so you might not get immediate support.</Fragment>
         ]
     }

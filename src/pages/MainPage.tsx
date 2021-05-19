@@ -1,3 +1,7 @@
+/**
+ * Landing page
+ */
+
 import React from 'react';
 import Header from 'ui/header/Header';
 import MainContent from 'ui/main_page/MainContent';

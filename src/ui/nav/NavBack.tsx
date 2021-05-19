@@ -1,7 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import VAlign from 'ui/VAlign';
 
+/**
+ * Navigation bar for non-landing pages
+ */
 const NavBack = ({text}: {text: string}) => 
 (<Fragment>
     <VAlign className="nav back">

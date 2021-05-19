@@ -19,7 +19,7 @@ const HeaderLinks = ({entries}: {entries: Entry[]}) => (
                     </a>
                 </SmartLink>
 
-                {!(length == i+1) ? <div className="sep"></div> : ""}
+                {!(length === i+1) ? <div className="sep"></div> : ""}
             </React.Fragment>
         ))}
     </div>

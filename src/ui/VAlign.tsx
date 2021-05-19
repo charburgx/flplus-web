@@ -1,6 +1,8 @@
 import React from 'react';
 
-// aligns content vertically
+/**
+ * Aligns content vertically
+ */
 const VAlign = (props: any) => (
     <div {...props} className={`valign-wrapper ${props.className}`}>
         {props.children}
