@@ -23,3 +23,4 @@ export const WIN_GITHUB: string = "charburgx/flplus-win";
 export const WIN_SOURCE: string = "https://github.com/" + WIN_GITHUB;
 export const WIN_ISSUES: string = WIN_SOURCE + '/' + issues;
 export const WIN_WIKI:   string = WIN_SOURCE + '/' + wiki;
+export const WEB_GITHUB: string = "charburgx/flplus-web";

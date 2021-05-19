@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.scss';
-import { GHVersion, WIN_SOURCE, WIN_WIKI, WIN_ISSUES } from 'api/constants';
+import { GHVersion, WIN_SOURCE, WIN_WIKI, WIN_ISSUES, WEB_GITHUB } from 'api/constants';
 import VAlign from 'ui/VAlign';
 import HeaderButton from './HeaderButton';
 import HeaderLinks from './HeaderLinks';
@@ -44,7 +44,7 @@ const Header = ({ ver }: props ) => (
         <HeaderLinks entries={[
              { text: "Documentation", icon: "book", href: WIN_WIKI },
              { text: "FAQ", icon: "help", href: "/faq" },
-             { text: "GitHub", icon: "code", href: "" },
+             { text: "GitHub", icon: "code", href: WEB_GITHUB },
              { text: "Suggestion", icon: "announcement", href: WIN_ISSUES }
         ]} />
     </div>
